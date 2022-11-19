@@ -30,9 +30,9 @@ channel.listen(eventName: "system:connected", callback: {event in
 ```
 
 ### Recommended: Use PieSocket's managed WebSocket server
-Following is how to create a Channel with PieSocket's managed WebSocket servers.
+Use following code to create a Channel with PieSocket's managed WebSocket servers.
 
-Get your API key and Cluster ID here: [Create PieSocket account](https://www.piesocket.com/app/v4/register)
+Get your API key and Cluster ID here: [Get API Key](https://www.piesocket.com/app/v4/register)
 
 ```
 let options: PieSocketOptions = PieSocketOptions();
@@ -45,7 +45,7 @@ let channel: Channel = piesocket.join(roomId: "chat-room");
 
 
 
-[PieSocket Channels](https://piesocket.com/channels) is scalable WebSockets service with following features:
+[PieSocket Channels](https://piesocket.com/channels) is scalable WebSocket API service with following features:
   - Authentication
   - Private Channels
   - Presence Channels
