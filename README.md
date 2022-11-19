@@ -44,7 +44,6 @@ let channel: Channel = piesocket.join(roomId: "chat-room");
 ```
 
 
-
 [PieSocket Channels](https://piesocket.com/channels) is scalable WebSocket API service with following features:
   - Authentication
   - Private Channels
@@ -57,6 +56,10 @@ let channel: Channel = piesocket.join(roomId: "chat-room");
   - Upto 60% cost savings
 
 We highly recommend using PieSocket Channels over self hosted WebSocket servers for production applications.
+
+## Events
+`system:connected` is the event fired when WebSocket connection is ready, get a full list system messages here: [PieSocket System Messages](https://www.piesocket.com/docs/3.0/events#system-events)
+
 
 ## Documentation
 For usage examples and more information, refer to: [Official SDK docs](https://www.piesocket.com/docs/3.0/ios-websockets)
