@@ -17,7 +17,21 @@ Simply import this github repository into your Xcode project.
 
 ## Usage
 
-### Use PieSocket's managed WebSocket server
+### Stand-alone Usage
+Create a Channel instance as shown below.
+```
+let channel: Channel = Channel(webSocketURL: "wss://example.com", enabledLogs: true);
+channel.listen(eventName: "system:connected", callback: {event in
+    print("WebSocket Connected!");
+
+    //Send data
+    channel.send(text: "Hello")
+})
+```
+
+### Recommended: Use PieSocket's managed WebSocket server
+Following is how to create a Channel with PieSocket's managed WebSocket servers.
+
 Get your API key and Cluster ID here: [Create PieSocket account](https://www.piesocket.com/app/v4/register)
 
 ```
@@ -29,14 +43,9 @@ let piesocket: PieSocket = PieSocket(pieSocketOptions: options);
 let channel: Channel = piesocket.join(roomId: "chat-room");
 ```
 
-### Stand-alone Usage
-To use with third-party WebSocket servers, skip the initialization part above and create a Channel instance as shown below.
 
-```
-let channel: Channel = Channel(webSocketURL: "wss://example.com", enabledLogs: true);
-```
 
-[PieSocket Channels](https://piesocket.com/channels) is a managed WebSockets service with following features:
+[PieSocket Channels](https://piesocket.com/channels) is scalable WebSockets service with following features:
   - Authentication
   - Private Channels
   - Presence Channels
