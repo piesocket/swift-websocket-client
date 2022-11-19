@@ -10,9 +10,9 @@ and implements auto-reconnection among other best WebSocket practices.
 ## Add to project
 Simply import this github repository into your Xcode project.
 
-    - In your Xcode project, go to File > Add packages
-    - Enter `https://github.com/piesocket/websocket-swift-client` in the search box
-    - Click "Add package"
+ - In your Xcode project, go to File > Add packages
+ - Enter `https://github.com/piesocket/websocket-swift-client` in the search box
+ - Click "Add package"
 
 
 ## Usage
