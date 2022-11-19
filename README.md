@@ -1,7 +1,6 @@
 # Swift WebSockets Client
 
 PieSocket Channels SDK for WebSockets written in Swift.
-
 Supports cross-platform Xcode projects for:  iOS, iPad, Mac, etc.
 
 This SDK can be used to communicate with any third-party WebSocket server,
