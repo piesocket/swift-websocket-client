@@ -19,7 +19,7 @@ Simply import this github repository into your Xcode project.
 
 ### Stand-alone Usage
 Create a Channel instance as shown below.
-```
+```dart
 let channel: Channel = Channel(webSocketURL: "wss://example.com", enabledLogs: true);
 channel.listen(eventName: "system:connected", callback: {event in
     print("WebSocket Connected!");
@@ -34,7 +34,7 @@ Use following code to create a Channel with PieSocket's managed WebSocket server
 
 Get your API key and Cluster ID here: [Get API Key](https://www.piesocket.com/app/v4/register)
 
-```
+```dart
 let options: PieSocketOptions = PieSocketOptions();
 options.setClusterId(clusterId: "demo");
 options.setApiKey(apiKey: "VCXCEuvhGcBDP7XhiJJUDvR1e1D3eiVjgZ9VRiaV");
