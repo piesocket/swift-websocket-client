@@ -29,7 +29,7 @@ channel.listen(eventName: "system:connected", callback: {event in
 })
 ```
 
-### Recommended: Use PieSocket's managed WebSocket server
+### Use PieSocket's managed WebSocket server
 Use following code to create a Channel with PieSocket's managed WebSocket servers.
 
 Get your API key and Cluster ID here: [Get API Key](https://www.piesocket.com/app/v4/register)
